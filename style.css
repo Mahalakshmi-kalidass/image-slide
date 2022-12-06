@@ -1,0 +1,31 @@
+body{
+  margin:0;
+}
+
+.top{
+  border:1px solid black;
+  width:450px;
+  height:450px;
+  margin:20px auto;
+  background-image: url("green.jpg");
+  background-size:100% 100%;
+  position: relative;
+  overflow:hidden;
+}
+.contain{
+  filter: grayscale(1);
+  background-image: url("green.jpg");
+  background-size:100% 100%;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  transform: translateX(0%);
+  transition:1s 0.5s;
+
+}
+.contain:hover{
+  
+  transform: translateX(100%);
+}
